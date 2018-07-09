@@ -9,6 +9,8 @@ import User from './first/user';
 import UserState from './first/state';
 import UserForm from './first/form';
 
+import Hello from './components/Hello'
+
 class App extends Component {
   render() {
     return (
@@ -17,6 +19,29 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React and Learn React</h1>
         </header>
+        <Hello message="hello world" />
+        <div className="side">
+          <ul>
+            <li><p>react 安装</p><ul>
+                <li><a href="#/configuration">create react app</a></li>
+                <li><a href="#/themes">npm</a></li>
+                <li><a href="#/plugins">script引入</a></li>
+                </ul>
+            </li>
+            <li><p>介绍</p><ul>
+                <li><a href="#/configuration">组件</a></li>
+                <li><a href="#/themes">Themes</a></li>
+                <li><a href="#/plugins">List of Plugins</a></li>
+                <li><a href="#/write-a-plugin">Write a Plugin</a></li>
+                <li><a href="#/markdown">Markdown configuration</a></li>
+                <li><a href="#/language-highlight">Language highlighting</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+
+        </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
