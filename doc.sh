@@ -5,6 +5,7 @@
 # 加入git版本库
 # 删除.gitignore，并从工作区删除文件
 # 提交
+# 推送远程仓库
 git checkout --orphan gh-pages
 cp -R docs docs_temp
 cp -R .gitignore .gitignore2
@@ -12,7 +13,7 @@ git rm -rf .
 cp -R docs_temp/* .
 rm -rf docs_temp
 mv .gitignore2 .gitignore
-rm .gitignore2
 git add .
 git rm -rf .gitignore
 git commit -m "init docs"
+git push -u origin gh-pages
