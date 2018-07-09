@@ -13,5 +13,5 @@ cp -R docs_temp/* .
 mv .gitignore2 .gitignore
 rm .gitignore2
 git add .
-git rm -rf .gitignore
+git rm .gitignore
 git commit -m "init docs"
